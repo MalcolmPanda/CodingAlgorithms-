@@ -60,7 +60,7 @@ arr = [345,97,93029,20,1,4,19,22,3,6,25]
 k = 6
 # k is the lowest value postion were finding
 #e.g. in a sorted array of [10,20,30,40,50,60]
-#k = position 3 so k would return 30
+#k = 0 would return the lowest number = 10 k=1 would return the 2nd lowest number = 20
 quickly_sorted = str(quickSelect(arr, 0, len(arr)-1,k))
 #len(arr)-1 returns the last value of the array
 printing= f"The {k+1}th smallest value is in k[{k}] which returns the value:"
