@@ -26,8 +26,8 @@ def partition(arr, l, r):
         #set our pivot to the last number in our array
         i = l -1
         # our i variable will start at the position one left of our left array on the first pass        [10,20,30,40,50]
-                                                                                                       ^
-                                                                                                      'i'
+                                                                                                       ^ ^
+                                                                                                      'i j'
         #set our i variable to one less than our l array
         for j in range(l, r):
             # move j from the left of the entire array until the end of the array
