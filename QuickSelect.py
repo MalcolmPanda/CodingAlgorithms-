@@ -20,14 +20,14 @@ def quickSelect(arr,left,right,k):
         # if k is more than the pivot
         return quickSelect(arr, pIndex + 1, right, k)
 
-
-
+    
 def partition(arr, l, r):
         pivot = arr[r]
         #set our pivot to the last number in our array
         i = l -1
-        # our i variable will always point to the last entered number of our left array
-
+        # our i variable will start at the position one left of our left array on the first pass        [10,20,30,40,50]
+                                                                                                       ^
+                                                                                                      'i'
         #set our i variable to one less than our l array
         for j in range(l, r):
             # move j from the left of the entire array until the end of the array
@@ -44,16 +44,6 @@ def partition(arr, l, r):
 
         return i + 1
             #return our pivot in its new postion in i+ 1 after the swap
-
-
-
-
-
-
-
-
-
-
 
 
 arr = [345,97,93029,20,1,4,19,22,3,6,25]
